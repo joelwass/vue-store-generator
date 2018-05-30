@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": { "vuex-gen": "./index.js" },
+  "bin": {
+    "vuex-gen": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github-personal:joelwass/vuex-store-generator.git"
