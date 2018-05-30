@@ -1,5 +1,13 @@
-const state = require('./state.json')
+#!/usr/bin/env node
+
+const argv = require('minimist')(process.argv.slice(2));
+let state = {}
 const fs = require('fs')
+
+// grab the inputted file path
+fs.readFile(argv.f, (err, data) => {
+  state = data
+})
 
 const initialText = 'import Vue from \'vue\''
 let typesString = ''
@@ -59,6 +67,6 @@ recursiveIterator = (currentState, parentString = '') => {
 recursiveIterator(state)
 const output = `${initialText}\n\n${typesString}\n\nexport default {\nstate: ${JSON.stringify(state)},\ngetters: {${gettersString}\n},\nactions: {${actionsString}\n},\nmutations: {${mutatorsString}}\n}`
 fs.writeFile('./store.js', output, (e) => {
-  console.log(e)
+  if (e) console.log(`Errors: ${e}`)
 })
 console.log('store generated into ./store.js')

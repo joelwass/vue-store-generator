@@ -1,0 +1,26 @@
+{
+  "name": "vuex-store-generator",
+  "version": "1.0.0",
+  "description": "generate a vuex store.js file from a json object file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": { "vuex-gen": "./index.js" },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:joelwass/vuex-store-generator.git"
+  },
+  "keywords": [
+    "json",
+    "generator",
+    "vue",
+    "store",
+    "vuex"
+  ],
+  "author": "joel wasserman",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}

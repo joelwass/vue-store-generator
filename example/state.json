@@ -1,0 +1,17 @@
+{
+      "baseUrl": "google.com/",
+      "billing": {
+            "address": "",
+            "address2": "",
+            "zip": "",
+            "city": "",
+            "state": ""
+      },
+      "install": {
+            "address": "",
+            "address2": "",
+            "zip": "",
+            "city": "",
+            "state": ""
+      }
+}
