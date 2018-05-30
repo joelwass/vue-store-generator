@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github-personal:joelwass/vuex-store-generator.git"
+    "url": "git@github.com:joelwass/vuex-store-generator.git"
   },
   "keywords": [
     "json",
