@@ -1,6 +1,6 @@
 {
   "name": "vuex-store-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "generate a vuex store.js file from a json object file",
   "main": "index.js",
   "scripts": {
