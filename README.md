@@ -10,9 +10,13 @@ An example state.json file can be found in the example directory
 
 `npm i -g vuex-store-generator`
 
+or 
+
+`npx vuex-store-generator -f ./store.json`
+
 ## usage
 
-`vuex-gen -f ./store.json`
+`vuex-gen -f ./store.json` 
 
 ## license
 
