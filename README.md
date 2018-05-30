@@ -12,7 +12,7 @@ An example state.json file can be found in the example directory
 
 ## usage
 
-`vuex-gen -f store.json`
+`vuex-gen -f ./store.json`
 
 ## license
 
