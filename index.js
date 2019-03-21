@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 
-const argv = require('minimist')(process.argv.slice(2));
 const fs = require('fs')
 
+if (!process.argv[2]) {
+  console.error('Must provide path to state JSON file')
+  process.exit(1)
+}
+
 // grab the inputted file path
-let state = fs.readFileSync(argv.f, 'utf8')
+let state = fs.readFileSync(process.argv[2], 'utf8')
 state = JSON.parse(state);
 const initialText = 'import Vue from \'vue\''
 let typesString = ''
