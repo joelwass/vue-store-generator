@@ -22,7 +22,5 @@
   ],
   "author": "joel wasserman",
   "license": "MIT",
-  "dependencies": {
-    "minimist": "^1.2.0"
-  }
+  "dependencies": {}
 }
